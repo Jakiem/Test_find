@@ -9,7 +9,6 @@ BOOKS = (
 )
 
 def find_where(books, query):
-    result = {}
     for i in books:
         if set(i.items()) & set(query.items()) == set(query.items()):
             return i
